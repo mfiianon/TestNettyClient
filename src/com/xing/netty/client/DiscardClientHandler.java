@@ -16,7 +16,6 @@
 package com.xing.netty.client;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -33,7 +32,7 @@ public class DiscardClientHandler extends SimpleChannelInboundHandler<Object> {
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) {
 		this.ctx = ctx;
-		ByteBufAllocator allocator = ctx.alloc();
+
 		// Initialize the message.
 		content = ctx.alloc().directBuffer(DiscardClient.SIZE)
 				.writeZero(DiscardClient.SIZE);
