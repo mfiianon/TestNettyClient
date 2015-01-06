@@ -15,6 +15,7 @@ package com.xing.netty.client;
  * License for the specific language governing permissions and limitations
  * under the License.
  */
+ 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
