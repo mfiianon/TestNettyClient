@@ -8,7 +8,7 @@ public final class SubscribeRespProto {
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
   }
-  public interface SubscribeReqOrBuilder
+  public interface SubscribeRespOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
     // required int32 subReqID = 1;
@@ -23,32 +23,32 @@ public final class SubscribeRespProto {
     boolean hasDesc();
     String getDesc();
   }
-  public static final class SubscribeReq extends
+  public static final class SubscribeResp extends
       com.google.protobuf.GeneratedMessage
-      implements SubscribeReqOrBuilder {
-    // Use SubscribeReq.newBuilder() to construct.
-    private SubscribeReq(Builder builder) {
+      implements SubscribeRespOrBuilder {
+    // Use SubscribeResp.newBuilder() to construct.
+    private SubscribeResp(Builder builder) {
       super(builder);
     }
-    private SubscribeReq(boolean noInit) {}
+    private SubscribeResp(boolean noInit) {}
     
-    private static final SubscribeReq defaultInstance;
-    public static SubscribeReq getDefaultInstance() {
+    private static final SubscribeResp defaultInstance;
+    public static SubscribeResp getDefaultInstance() {
       return defaultInstance;
     }
     
-    public SubscribeReq getDefaultInstanceForType() {
+    public SubscribeResp getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeReq_descriptor;
+      return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeResp_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeReq_fieldAccessorTable;
+      return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeResp_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -175,41 +175,41 @@ public final class SubscribeRespProto {
       return super.writeReplace();
     }
     
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(byte[] data)
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(java.io.InputStream input)
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseDelimitedFrom(java.io.InputStream input)
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -218,7 +218,7 @@ public final class SubscribeRespProto {
         return null;
       }
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseDelimitedFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -229,12 +229,12 @@ public final class SubscribeRespProto {
         return null;
       }
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq parseFrom(
+    public static com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -244,7 +244,7 @@ public final class SubscribeRespProto {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq prototype) {
+    public static Builder newBuilder(com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -257,18 +257,18 @@ public final class SubscribeRespProto {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements com.xing.netty.interfaces.SubscribeRespProto.SubscribeReqOrBuilder {
+       implements com.xing.netty.interfaces.SubscribeRespProto.SubscribeRespOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeReq_descriptor;
+        return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeResp_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeReq_fieldAccessorTable;
+        return com.xing.netty.interfaces.SubscribeRespProto.internal_static_netty_SubscribeResp_fieldAccessorTable;
       }
       
-      // Construct using com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.newBuilder()
+      // Construct using com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -302,24 +302,24 @@ public final class SubscribeRespProto {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.getDescriptor();
+        return com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.getDescriptor();
       }
       
-      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq getDefaultInstanceForType() {
-        return com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.getDefaultInstance();
+      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp getDefaultInstanceForType() {
+        return com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.getDefaultInstance();
       }
       
-      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq build() {
-        com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq result = buildPartial();
+      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp build() {
+        com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq buildParsed()
+      private com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq result = buildPartial();
+        com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -327,8 +327,8 @@ public final class SubscribeRespProto {
         return result;
       }
       
-      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq buildPartial() {
-        com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq result = new com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq(this);
+      public com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp buildPartial() {
+        com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp result = new com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -349,16 +349,16 @@ public final class SubscribeRespProto {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq) {
-          return mergeFrom((com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq)other);
+        if (other instanceof com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp) {
+          return mergeFrom((com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq other) {
-        if (other == com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp other) {
+        if (other == com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.getDefaultInstance()) return this;
         if (other.hasSubReqID()) {
           setSubReqID(other.getSubReqID());
         }
@@ -510,22 +510,22 @@ public final class SubscribeRespProto {
         onChanged();
       }
       
-      // @@protoc_insertion_point(builder_scope:netty.SubscribeReq)
+      // @@protoc_insertion_point(builder_scope:netty.SubscribeResp)
     }
     
     static {
-      defaultInstance = new SubscribeReq(true);
+      defaultInstance = new SubscribeResp(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:netty.SubscribeReq)
+    // @@protoc_insertion_point(class_scope:netty.SubscribeResp)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_netty_SubscribeReq_descriptor;
+    internal_static_netty_SubscribeResp_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_netty_SubscribeReq_fieldAccessorTable;
+      internal_static_netty_SubscribeResp_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -535,24 +535,24 @@ public final class SubscribeRespProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023SubscribeResp.proto\022\005netty\"@\n\014Subscrib" +
-      "eReq\022\020\n\010subReqID\030\001 \002(\005\022\020\n\010respCode\030\002 \002(\005" +
-      "\022\014\n\004desc\030\003 \002(\tB/\n\031com.xing.netty.interfa" +
-      "cesB\022SubscribeRespProto"
+      "\n\023SubscribeResp.proto\022\005netty\"A\n\rSubscrib" +
+      "eResp\022\020\n\010subReqID\030\001 \002(\005\022\020\n\010respCode\030\002 \002(" +
+      "\005\022\014\n\004desc\030\003 \002(\tB/\n\031com.xing.netty.interf" +
+      "acesB\022SubscribeRespProto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
         public com.google.protobuf.ExtensionRegistry assignDescriptors(
             com.google.protobuf.Descriptors.FileDescriptor root) {
           descriptor = root;
-          internal_static_netty_SubscribeReq_descriptor =
+          internal_static_netty_SubscribeResp_descriptor =
             getDescriptor().getMessageTypes().get(0);
-          internal_static_netty_SubscribeReq_fieldAccessorTable = new
+          internal_static_netty_SubscribeResp_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_netty_SubscribeReq_descriptor,
+              internal_static_netty_SubscribeResp_descriptor,
               new java.lang.String[] { "SubReqID", "RespCode", "Desc", },
-              com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.class,
-              com.xing.netty.interfaces.SubscribeRespProto.SubscribeReq.Builder.class);
+              com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.class,
+              com.xing.netty.interfaces.SubscribeRespProto.SubscribeResp.Builder.class);
           return null;
         }
       };
