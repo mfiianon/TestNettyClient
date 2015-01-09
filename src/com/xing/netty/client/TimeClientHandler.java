@@ -17,6 +17,9 @@ public class TimeClientHandler extends SimpleChannelInboundHandler<Object> {
 
 	public TimeClientHandler() {
 		ByteBuf byteBuf = Unpooled.buffer(1024);
+		while(byteBuf.isReadable()){
+			
+		}
 		Unpooled.compositeBuffer();
 		req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
 	}
